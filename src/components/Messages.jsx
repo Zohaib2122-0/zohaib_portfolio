@@ -1,50 +1,57 @@
-// 
+
 
 import React, { useEffect, useCallback } from 'react';
 import { usemessagesstore } from '../lib/store/usemessagesstore';
 
 const Messages = () => {
-  // Accessing state inside the component with selective mapping
   const messages = usemessagesstore((state) => state.messages);
   const loading = usemessagesstore((state) => state.loading);
   const getMessages = usemessagesstore((state) => state.getMessages);
 
-  // Using useCallback to memoize the getMessages function
   const fetchMessages = useCallback(() => {
     getMessages();
   }, [getMessages]);
 
-  // Fetch messages only once when the component mounts
   useEffect(() => {
     fetchMessages();
   }, [fetchMessages]);
 
-
-  console.log('Fetched Messages:', messages); // Debugging
-
   if (loading) {
-    return <p>Loading messages...</p>;
+    return <div className="text-center text-xl py-10">Loading messages...</div>;
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold mb-4">Messages</h1>
-
-      <div className="bg-white p-4 shadow rounded">
-        {messages.length === 0 ? (
-          <p>No messages available.</p>
-        ) : (
-          <ul>
-            {messages.map((msg, index) => (
-              <li key={index} className="border-b border-gray-200 py-2">
-                <p><strong>Name:</strong> {msg.name}</p>
-                <p><strong>Phone:</strong> {msg.phone}</p>
-                <p><strong>Subject:</strong> {msg.subject}</p>
-                <p><strong>Message:</strong> {msg.message}</p>
-              </li>
-            ))}
-          </ul>
-        )}
+    <div className="max-w-5xl mx-auto p-6">
+      <h2 className="text-2xl font-bold text-center mb-6">Messages</h2>
+      <div className="overflow-x-auto">
+        <table className="min-w-full bg-white border border-gray-300 rounded-lg shadow-md">
+          <thead>
+            <tr className="bg-gray-200 text-gray-700 text-left">
+              <th className="px-4 py-2 border-b">Name</th>
+              <th className="px-4 py-2 border-b">Phone</th>
+              <th className="px-4 py-2 border-b">Subject</th>
+              <th className="px-4 py-2 border-b">Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            {messages.length > 0 ? (
+              messages.map((msg, index) => (
+                <tr key={index} className="hover:bg-gray-100">
+                  <td className="px-4 py-2 border-b">{msg.name}</td>
+                  <td className="px-4 py-2 border-b">{msg.phone}</td>
+                  <td className="px-4 py-2 border-b">{msg.subject}</td>
+                  <td className="px-4 py-2 border-b">{msg.message}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="4" className="text-center py-4 text-gray-500">
+                  No messages available.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
       </div>
     </div>
   );

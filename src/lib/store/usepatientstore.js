@@ -8,7 +8,7 @@ loading:false,
   // Create a new patient
   createPatient: async (patientData) => {
     try {
-      const response = await axioinstance.post('http://localhost:3000/api/addpatient', patientData);
+      const response = await axioinstance.post('https://faisal-hm.vercel.app/api/addpatient', patientData);
       // return response.data
       console.log('Patient created:', response.data);
       set((state) => ({
@@ -25,7 +25,7 @@ getpatient:async()=>{
   set({loading:true})
   try {
     
-    let response=await axioinstance.get("http://localhost:3000/api/getpatient")
+    let response=await axioinstance.get("https://faisal-hm.vercel.app/api/getpatient")
     set({patients:response.data.getpatient, loading:false})
   } catch (error) {
     console.log(error)

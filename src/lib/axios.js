@@ -2,7 +2,8 @@ import axios from "axios";
 
 
 let axioinstance=axios.create({
-    baseurl:"http://localhost:3000/api",
+    baseurl:"https://faisal-hm.vercel.app/api",
+    
   
     withCredentials:true
 })

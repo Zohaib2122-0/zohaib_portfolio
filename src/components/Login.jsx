@@ -1,19 +1,16 @@
-// src/components/Login.js
-import React, { useState } from 'react';
 
-import useuserStore from '../lib/store/useuserstore';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import { Navigate } from 'react-router-dom';
-// Assuming you have Zustand store
+import { useLoginMutation } from './redux/userapislice';
 
 const Login = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
   });
-  
-  const login = useuserStore((state) => state.login); // Zustand se login function
+
+  const [login, { isLoading, isError, error }] = useLoginMutation(); // <-- use RTK Query mutation
 
   const handleInputChange = (e) => {
     setFormData({
@@ -25,12 +22,25 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Zustand store se login function call karo
-      const response = await login(formData);
-      console.log('User logged in successfully:', response);
-      navigate("/createappointment")
-    } catch (error) {
-      console.error('Login failed:', error);
+      const res = await login(formData).unwrap(); // unwrap to catch error properly
+     let token= res.logintoken
+     
+      localStorage.setItem("user",JSON.stringify(res))
+
+      localStorage.setItem("auth token",token)
+
+      if(formData.email=="admin@gmail.com" && formData.password=="Admin@2122"){
+        navigate("/admin");
+
+      }else{
+        navigate("/");
+
+      }
+      
+
+
+    } catch (err) {
+      console.error('Login failed:', err);
     }
   };
 
@@ -67,11 +77,17 @@ const Login = () => {
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors"
+              disabled={isLoading}
             >
-              Login
+              {isLoading ? 'Logging in...' : 'Login'}
             </button>
           </div>
         </form>
+        {isError && (
+          <p className="mt-4 text-center text-sm text-red-500">
+            {error?.data?.message || 'Login failed. Please try again.'}
+          </p>
+        )}
         <p className="mt-6 text-center text-sm text-gray-500">
           Don't have an account?{' '}
           <a href="/signup" className="text-blue-600 hover:text-blue-500">

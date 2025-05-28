@@ -16,12 +16,15 @@ adddoctor:async(data)=>{
             specialization,
             consultationFees,
             email,
-            password}=data
-        let response =await axios.post("http://localhost:3000/api/adddoctor",{ name,
+         status,
+            role}=data
+        let response =await axios.post("https://faisal-hm.vercel.app/api/adddoctor",{ name,
             specialization,
             consultationFees,
             email,
-            password})
+             status,
+            role
+            })
         set((state)=>({
             Doctors:[...state.Doctors, response.data]
         }))
@@ -33,7 +36,7 @@ adddoctor:async(data)=>{
 getdoctor:async()=>{
     set({loading:true})
     try {
-      let response=await axioinstance.get("http://localhost:3000/api/getdoctor")
+      let response=await axioinstance.get("https://faisal-hm.vercel.app/api/getdoctor")
       set({Doctors:response.data.getdoctor, loading:false})  
         console.log(response.data.getdoctor)
     } catch (error) {

@@ -1,21 +1,20 @@
 
-import React, { useState } from 'react';
-import useuserStore from '../lib/store/useuserstore';
-import { useNavigate } from 'react-router-dom';
 
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useRegisterMutation } from './redux/userapislice';
 
 const Signup = () => {
- 
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
-    role:'user'
+    role: 'user'
   });
 
-  const register = useuserStore((state) => state.register); // Zustand se register function
-const navigate= useNavigate()
+  const navigate = useNavigate();
+  const [register, { isLoading, error }] = useRegisterMutation(); // ✅ RTK Mutation Hook
+
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
@@ -26,15 +25,11 @@ const navigate= useNavigate()
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Zustand store se register function call karo
-      const response = await register(formData);
-      console.log('User registered successfully:', response);
-      navigate('/login')
-
-      
-
-    } catch (error) {
-      console.error('Registration failed:', error);
+      const res = await register(formData).unwrap(); // unwrap gives raw response
+      console.log('User registered successfully:', res);
+      navigate('/login');
+    } catch (err) {
+      console.error('Registration failed:', err);
     }
   };
 
@@ -80,17 +75,17 @@ const navigate= useNavigate()
             />
           </div>
 
-
-        
-
+          {error && (
+            <p className="text-red-500 text-sm">{error?.data?.message || 'Registration failed'}</p>
+          )}
 
           <div>
             <button 
               type="submit"
               className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors"
+              disabled={isLoading}
             >
-              Register
-            
+              {isLoading ? 'Registering...' : 'Register'}
             </button>
           </div>
         </form>

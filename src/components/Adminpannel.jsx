@@ -18,10 +18,12 @@ const Adminpannel = () => {
               {/* <img src="https://avatars.mds.yandex.net/i?id=d7647d2a6d58acd725ad66905050d9e9ade06b24-12346182-images-thumbs&n=13" className="h-4 rotate-180 cursor-pointer" alt="Back" /> */}
               <p>Back</p>
             </div>
-             <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/">HOME</Link>
-              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/collection">COLLECTION</Link>
-              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/about">ABOUT</Link>
-              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/contact">CONTACT</Link>
+             <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/admin">Dashboard</Link>
+              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/admin/approved/appointments">Approved Appointments</Link>
+              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/admin/messages">Messages</Link>
+              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/admin/doctorlist">Doctors</Link>
+              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/admin/PatientList">Patients</Link>
+              <Link onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/admin/appointments">Appointments</Link>
           </div>
         </div>
 

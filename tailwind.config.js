@@ -14,7 +14,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+      colors: {
+        darkbg: "#141414",
+        // cont: "#1F1F1F ",
+        cont: "#b9b8b4",
+        lab: "#e4e46d"
+      }
+
+    },
   },
   plugins: [],
 }

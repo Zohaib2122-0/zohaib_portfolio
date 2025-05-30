@@ -70,10 +70,10 @@ export const Appointmentlist = () => {
                   <td className="px-4 py-2 border-b">{appointment.doctor}</td>
                   <td className="px-4 py-2 text-yellow-500 border-b">{appointment.status}</td>
                   
-                  <td className="px-4 py-2 border-b space-x-2">
+                  <td className="px-4 py-2 border-b space-x-2 space-y-2 flex justify-center items-center">
                     <button
                       onClick={() => handleReject(appointment._id)}
-                      className="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"
+                      className="px-1 py-1  h-8 bg-red-600 text-white rounded hover:bg-red-700 transition"
                       disabled={rejecting}
                     >
                       {rejecting ? "Rejecting..." : "Reject"}
@@ -81,7 +81,7 @@ export const Appointmentlist = () => {
                     {/* {!appointment.status && ( */}
                       <button
                         onClick={() => handleApprove(appointment._id)}
-                        className="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                        className="px-1 py-1 h-8  bg-green-600 text-white rounded hover:bg-green-700 transition"
                         disabled={approving}
                       >
                         {approving ? "Approving..." : "Approve"}

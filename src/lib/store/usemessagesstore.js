@@ -11,8 +11,15 @@ export const usemessagesstore = create((set) => ({
   // Send a new message
   sendMessage: async (messageData) => {
     try {
-      const response = await axioinstance.post('https://faisal-hm.vercel.app/api/sendmessage', messageData);
-      console.log('Message sent:', response.data);
+      // const response = await axioinstance.post('https://faisal-hm.vercel.app/api/sendmessage', messageData);
+    
+       const baseURL =
+                            typeof window !== "undefined" && window.location.hostname === "localhost"
+                                ? "http://localhost:3000"
+                                : "https://faisal-hm.vercel.app";
+                
+                        const response = await axioinstance.post(`${baseURL}/api/sendmessage`, messageData);
+      
       set((state) => ({
         messages: [...state.messages, response.data], // Add new message to the state
       }));
@@ -25,7 +32,15 @@ export const usemessagesstore = create((set) => ({
   getMessages: async () => {
     set({ loading: true });
     try {
-      const response = await axioinstance.get('https://faisal-hm.vercel.app/api/getmessages');
+      // const response = await axioinstance.get('https://faisal-hm.vercel.app/api/getmessages');
+
+       const baseURL =
+                  typeof window !== "undefined" && window.location.hostname === "localhost"
+                      ? "http://localhost:3000"
+                      : "https://faisal-hm.vercel.app";
+      
+              const response = await axioinstance.get(`${baseURL}/api/getmessages`);
+
       set({ messages: response.data.getmessages, loading: false });
       console.log(response.data.getmessages); // Verify response structure
 

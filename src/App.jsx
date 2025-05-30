@@ -1,7 +1,7 @@
 import React from 'react'
-import Signup from './components/Signup'
+// import Signup from './components/Signup'
 import { Route, Routes } from 'react-router-dom'
-import Login from './components/Login'
+// import Login from './components/Login'
 import { Createpatientformm } from './components/Createpatientformm'
 import { Sendmesageform } from './components/Sendmesageform'
 import Messages from './components/Messages'
@@ -18,6 +18,7 @@ import Contact from './components/fontenedpages/Contact'
 import { Approvedappointments } from './components/fontenedpages/Approvedappointments'
 import { Doctors } from './components/fontenedpages/Doctors'
 import { Registeredoctors } from './components/fontenedpages/Registereddoctors'
+import { About } from './components/About'
 
 const App = () => {
   return (
@@ -26,8 +27,6 @@ const App = () => {
 <Routes>
 
         <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<Signup/>}/>
         <Route path='/sendmessageform' element={<Sendmesageform/>}/>
         <Route path='/gettreatment' element={<Swiper/>}/>
         <Route path='/createappointment' element={<Createappointmentform/>}/>
@@ -35,6 +34,7 @@ const App = () => {
         <Route path='/doctor/registeration' element={<DoctorRegistrationForm/>}/>
         <Route path='/Createpatientformm' element={<Createpatientformm/>}/>
         <Route path='/registered/doctor' element={<Registeredoctors/>}/>
+        <Route path='/about' element={<About/>}/>
 
 
 

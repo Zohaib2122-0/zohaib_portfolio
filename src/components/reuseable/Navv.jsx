@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Navv = () => {
-  
+
   const token = localStorage.getItem('auth token')
 
 
@@ -40,42 +40,21 @@ export const Navv = () => {
 
 
 
-           
-                <div className='hidden md:flex space-x-4 ml-52 mt-1'>
 
-                  <Link to={"/about"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+              <div className='hidden md:flex space-x-4 ml-52 mt-1'>
+
+                <Link to={"/about"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
                   About
-                  </Link>
-                  <Link to={"/Createpatientformm"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                   Services
-                  </Link>
-
-
-                  <Link to={"/createappointment"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Appointment
-                  </Link>
-
-                  <Link to={"/doctor/registeration"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Join
-                  </Link>
-                  <Link to={"/registered/doctor"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Our Team
-                  </Link>
-
-                  <Link to={"/sendmessageform"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Support
-                  </Link>
-                </div>
-            
+                </Link>
+                <Link to={"/services"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                  Services
+                </Link>
 
 
 
 
+              </div>
 
-
-              <Link to={"/contact"} className="text-cont hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                Contact
-              </Link>
 
             </div>
           </div>
@@ -85,16 +64,14 @@ export const Navv = () => {
 
 
             <button
-             
-              
-              className="py-2 px-3 bg-lab text-black font-medium rounded-lg hover:bg-red-700 transition"
+
+
+              className="py-2 px-3 bg-lab text-black font-medium rounded-lg hover:bg-yellow-300 transition"
             >
 
-               {/* <div className=' text-white scale-100 hover:text-red-600  text-sm'> */}
-                <Link to={"/"}>
+              <Link to={"/contact"}>
                 Contact Us
-                </Link>
-                 {/* </div> */}
+              </Link>
             </button>
 
           </div>
@@ -119,42 +96,31 @@ export const Navv = () => {
             </Link>
 
 
-   <Link to={"/createappointment"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-             Appointment
+            <Link to={"/services"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
+              Services
             </Link>
-   <Link to={"/doctor/registeration"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-            Join
-            </Link>
-   <Link to={"/registered/doctor"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-             Our Team
-            </Link>
-   <Link to={"/sendmessageform"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-             Support
-            </Link>
-   <Link to={"/Createpatientformm"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
+            <Link to={"/about"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
               About
             </Link>
-            <Link to={"/Createpatientformm"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
-              Admin patient
-            </Link>
+
             <Link to={"/contact"} className="text-cont hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">
               Contact
             </Link>
 
             <button
-              
+
               className="py-2 px-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition"
             >
 
-               <div className=' text-white scale-100  hover:text-red-600  text-sm'>
-                <Link to={"/"}>Contact Us</Link> </div>
+              <div className=' text-white scale-100  hover:text-red-600  text-sm'>
+                <Link to={"/contact"}>Contact Us</Link> </div>
             </button>
- 
-     
 
-           
 
-        
+
+
+
+
 
 
           </div>

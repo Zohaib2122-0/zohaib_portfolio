@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit';
-// import { apiSlice } from './userapislice';
 import { appointmentApi } from './appointmentsapi';
 import { doctorApi } from './doctortapi';
 

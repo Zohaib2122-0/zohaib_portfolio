@@ -5,6 +5,9 @@ import { ContactUs } from './components/Contact'
 import Services from './components/Services'
 import Layout from './components/Layout'
 import Home from './components/Home'
+import MessagesList from './components/Messageslist'
+import Uploadproject from './components/uploadporject'
+import ProjectsPage from './components/projectpage'
 
 const App = () => {
   return (
@@ -14,7 +17,10 @@ const App = () => {
 
 
           <Route path='/' element={<Home />} />
+          <Route path='/upload' element={<Uploadproject />} />
+          <Route path='/portfolio' element={<ProjectsPage />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/queries' element={<MessagesList/>} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
         </Routes>

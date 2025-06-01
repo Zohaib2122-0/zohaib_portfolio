@@ -1,15 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { appointmentApi } from './appointmentsapi';
-import { doctorApi } from './doctortapi';
+import { messagesApi } from './messagesapislice';
+import { projectapi } from './projectapislice';
 
 
 export const store = configureStore({
   reducer: {
-    [appointmentApi.reducerPath]:appointmentApi.reducer,
-    [doctorApi.reducerPath]:doctorApi.reducer
+    [messagesApi.reducerPath]:messagesApi.reducer,
+    [projectapi.reducerPath]:projectapi.reducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware()
-  .concat(appointmentApi.middleware)
-  .concat(doctorApi.middleware)
-});
+  .concat(messagesApi.middleware)
+  .concat(projectapi.middleware)
+})

@@ -3,9 +3,7 @@ import React from 'react'
 const Projectcompleted = () => {
     return (
         <div>
-          {/* project completion and years */ }
-
-           {/* project completion and years */}
+         
             <div className="bg-darkbg border-t-1 border-gray-700 border-[80%] text-white py-16">
                 {/* Bottom Section - Statistics Card */}
                 <div className="px-6 md:px-12 lg:px-20 ">

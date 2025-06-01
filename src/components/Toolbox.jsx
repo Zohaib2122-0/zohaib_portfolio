@@ -1,64 +1,125 @@
 import React from 'react'
 
 const Toolbox = () => {
-      const tools = [
-    {
-      name: 'Figma',
-      category: 'Design Tool',
-      icon: '🎨',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-red-500'
-    },
-    {
-      name: 'Framer',
-      category: 'Design Tool',
-      icon: '🔧',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-blue-500'
-    },
-    {
-      name: 'Illustrator',
-      category: 'Design Tool',
-      icon: 'Ai',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-orange-500'
-    },
-    {
-      name: 'Adobe Xd',
-      category: 'Design Tool',
-      icon: 'Xd',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-purple-500'
-    },
-    {
-      name: 'Indesign',
-      category: 'Design Tool',
-      icon: 'Id',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-pink-500'
-    },
-    {
-      name: 'Photoshop',
-      category: 'Design Tool',
-      icon: 'Ps',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-blue-600'
-    },
-    {
-      name: 'Lightroom',
-      category: 'Design Tool',
-      icon: 'Lr',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-blue-400'
-    },
-    {
-      name: 'Incopy',
-      category: 'Design Tool',
-      icon: 'Ic',
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-red-400'
-    }
-  ];
+  //     const tools = [
+  //   {
+  //     name: 'Figma',
+  //     category: 'Design Tool',
+  //     icon: '🎨',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-red-500'
+  //   },
+  //   {
+  //     name: 'Framer',
+  //     category: 'Design Tool',
+  //     icon: '🔧',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-blue-500'
+  //   },
+  //   {
+  //     name: 'Illustrator',
+  //     category: 'Design Tool',
+  //     icon: 'Ai',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-orange-500'
+  //   },
+  //   {
+  //     name: 'Adobe Xd',
+  //     category: 'Design Tool',
+  //     icon: 'Xd',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-purple-500'
+  //   },
+  //   {
+  //     name: 'Indesign',
+  //     category: 'Design Tool',
+  //     icon: 'Id',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-pink-500'
+  //   },
+  //   {
+  //     name: 'Photoshop',
+  //     category: 'Design Tool',
+  //     icon: 'Ps',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-blue-600'
+  //   },
+  //   {
+  //     name: 'Lightroom',
+  //     category: 'Design Tool',
+  //     icon: 'Lr',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-blue-400'
+  //   },
+  //   {
+  //     name: 'Incopy',
+  //     category: 'Design Tool',
+  //     icon: 'Ic',
+  //     bgColor: 'bg-gray-800',
+  //     iconBg: 'bg-red-400'
+  //   }
+  // ];
+
+
+  const tools = [
+  {
+    name: 'Figma',
+    category: 'Design Tool',
+    icon: '🌐', // Represents web-based design collaboration
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-red-500'
+  },
+  {
+    name: 'Framer',
+    category: 'Design Tool',
+    icon: '⚙️', // Represents prototyping and interaction
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-blue-500'
+  },
+  {
+    name: 'Illustrator',
+    category: 'Design Tool',
+    icon: '🖌️', // Represents illustration/vector design
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-orange-500'
+  },
+  {
+    name: 'Adobe Xd',
+    category: 'Design Tool',
+    icon: '🧩', // Represents UI/UX layout tool
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-purple-500'
+  },
+  {
+    name: 'Indesign',
+    category: 'Design Tool',
+    icon: '📄', // Represents publishing and page layout
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-pink-500'
+  },
+  {
+    name: 'Photoshop',
+    category: 'Design Tool',
+    icon: '🖼️', // Represents photo editing
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-blue-600'
+  },
+  {
+    name: 'Lightroom',
+    category: 'Design Tool',
+    icon: '📷', // Represents photo correction and lighting
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-blue-400'
+  },
+  {
+    name: 'Incopy',
+    category: 'Design Tool',
+    icon: '✍️', // Represents editorial/copy editing
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-red-400'
+  }
+];
+
   return (
 
     <div className="min-h-fit bg-darkbg text-white p-8 ">
@@ -88,14 +149,14 @@ const Toolbox = () => {
             key={index}
             className=" border-2 border-gray-700 rounded-2xl p-6 hover:bg-[#1f1f1f] transition-colors cursor-pointer"
           >
-            <div className="flex items-center gap-4 mb-4">
-              {tool.icon.length > 2 ? (
+            <div className="flex items-center gap-4 mb-1">
+              {/* {tool.icon.length > 2 ? (
                 <div className={`w-10 h-10 ${tool.iconBg} rounded-lg flex items-center justify-center text-white font-bold text-sm`}>
                   {tool.icon}
                 </div>
               ) : (
                 <div className="text-2xl">{tool.icon}</div>
-              )}
+              )} */}
             </div>
             <h3 className="text-xl font-semibold mb-2">{tool.name}</h3>
             <p className="text-gray-400 text-sm">{tool.category}</p>

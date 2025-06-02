@@ -45,9 +45,9 @@ export const Navv = () => {
                 <Link to={"/about"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
-                <Link to={"/queries"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
+                {/* <Link to={"/queries"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   Messages
-                </Link>
+                </Link> */}
              
                 <Link to={"/services"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   Services
@@ -101,9 +101,9 @@ export const Navv = () => {
             <Link to={"/services"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               Services
             </Link>
-            <Link to={"/queries"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
+            {/* <Link to={"/queries"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               messages
-            </Link>
+            </Link> */}
            
             <Link to={"/portfolio"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               Portfolio

@@ -1,9 +1,20 @@
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
+
+
+
+const baseQuery = fetchBaseQuery({
+  baseUrl:
+    import.meta.env.MODE === "production"
+      ? "https://hm-bay.vercel.app/api/"
+      : "/api",
+  credentials: "include",
+});
+
 export const messagesApi = createApi({
   reducerPath: 'messagesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api/' }), 
+  baseQuery,
   tagTypes: ['Messages'],
   endpoints: (builder) => ({
     // 1. Send Message

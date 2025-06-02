@@ -1,9 +1,19 @@
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
+
+
+const baseQuery = fetchBaseQuery({
+  baseUrl:
+    import.meta.env.MODE === "production"
+      ? "https://hm-bay.vercel.app/api/"
+      : "/api",
+  credentials: "include",
+});
+
 export const projectapi = createApi({
   reducerPath: 'projectapi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000/api/' }), 
+  baseQuery,
   tagTypes: ['Projects'],
   endpoints: (builder) => ({
     // 1. Send Message
@@ -34,7 +44,7 @@ export const projectapi = createApi({
 });
 
 export const {
-    useDeleteMessageMutation,
-    useGetprojectsQuery,
-    useUploadprojectMutation
+  useDeleteMessageMutation,
+  useGetprojectsQuery,
+  useUploadprojectMutation
 } = projectapi;

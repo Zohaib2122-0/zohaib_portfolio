@@ -70,10 +70,16 @@ const Allservices = () => {
                         Our innovative <span className="text-lab">services</span>
                     </h2>
                 </div>
-                <button className="bg-lab hover:bg-yellow-500 text-black px-5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 " >
+                <button className="bg-lab lg:hidden hover:bg-yellow-500 text-black px-2 py-2  rounded-xl text-sm font-semibold flex items-center gap-2 " >
                    
                    <Link to={"/portfolio"} className='flex justify-center items-center '>
-                    View All Services
+                    Services
+                   </Link>
+                </button>
+                <button className="bg-lab hidden lg:block hover:bg-yellow-500 text-black px-5 py-2 rounded-xl text-sm font-semibold flex  items-center gap-2 " >
+                   
+                   <Link to={"/portfolio"} className='flex justify-center items-center '>
+                View All  Services 
                    </Link>
                 </button>
             </div>

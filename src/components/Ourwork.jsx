@@ -1,6 +1,13 @@
-import React from 'react'
 
-const Ourwork = () => {
+
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
+
+
+  const Ourwork = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true }); // only once per scroll
   const projects = [
     {
       id: 1,
@@ -52,6 +59,13 @@ const Ourwork = () => {
               key={project.id}
               className="bg-[#1f1f1f] rounded-3xl p-4 pb-8 space-y-4 hover:shadow-xl transition"
             >
+                        <motion.div
+          ref={ref}
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={isInView ? { scale: 1, opacity: 1 } : {}}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          // className="flex items-center gap-4 mb-1 justify-center"
+        >
               <div className="overflow-hidden rounded-2xl">
                 <img
                   src={project.image}
@@ -63,7 +77,7 @@ const Ourwork = () => {
                 {project.title}
               </h3>
               <p className="text-gray-400 text-sm">{project.description}</p>
-
+</motion.div>
             </div>
           ))}
         </div>

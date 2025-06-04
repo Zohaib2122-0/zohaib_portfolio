@@ -29,7 +29,7 @@ export const Navv = () => {
               <Link to={"/"} className="text-2xl font-bold text-blue-600 mt-3 ">
 
 
-                <img className='w-10 h-10 rounded-lg' src="public/A-One - Logo-02.jpeg" alt="" />
+                <img className='w-10 h-10 rounded-lg' src="https://res.cloudinary.com/dv0rjcjfe/image/upload/v1749063518/products/f3g9becxiakyypuyiin8.jpg" alt="" />
                 
               </Link>
             </div>

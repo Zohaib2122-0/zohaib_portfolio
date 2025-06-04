@@ -3,11 +3,11 @@ import React from 'react'
 const Proudmoments = () => {
   return (
       
-                <div className="bg-darkbg text-white py-16 lg:py-24 ">
+                <div className="bg-darkbg text-white py-16 p-3 lg:py-20 ">
                     <div className=" md:px-12 lg:px-20 ">
                         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start  rounded-2xl ">
                             {/* Left Side - Main Content */}
-                            <div className="space-y-8">
+                            <div className="space-y-2 px-3 lg:p-0">
                                 {/* Section Badge */}
                                 <div className="flex items-center gap-2">
                                     <div className="w-2 h-2 bg-lab rounded-full"></div>

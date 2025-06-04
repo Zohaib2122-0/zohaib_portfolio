@@ -194,11 +194,11 @@ export const About = () => {
 
                     {/* our mission */}
 
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center  p-4 bg-[#1F1F1F] ">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center  p-4 bg-[#1F1F1F]  ">
                         {/* Left Side - Device Mockups */}
 
 
-                        <div className="space-y-8">
+                        <div className="space-y-8  ">
                             {/* Section Badge */}
                             <div className="flex items-center gap-2">
                                 <div className="w-2 h-2 bg-lab rounded-full"></div>
@@ -238,7 +238,7 @@ export const About = () => {
                             </div>
                         </div>
                         {/* Right Side - Content */}
-                        <img src="https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/our-mission-img.jpg" className='relative w-96 h-96 rounded-2xl' alt="" />
+                        <img src="https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/our-mission-img.jpg" className='relative w-96 h-96 rounded-2xl' alt="error" />
 
                     </div>
 

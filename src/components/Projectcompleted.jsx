@@ -4,7 +4,7 @@ const Projectcompleted = () => {
     return (
         <div>
          
-            <div className="bg-darkbg border-t-1 border-gray-700 border-[80%] text-white py-16">
+            <div className="bg-darkbg border-t-1 border-gray-700 border-[80%] text-white py-8">
                 {/* Bottom Section - Statistics Card */}
                 <div className="px-6 md:px-12 lg:px-20 ">
                     <div className="bg-lab text-gray-900 rounded-3xl p-8 lg:p-12 relative overflow-hidden">

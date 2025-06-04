@@ -3,38 +3,56 @@ import React, { useState } from 'react';
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const services = [
-    {
-        id: 1,
-        title: 'UI/UX Design',
-        to: "/about",
-        description:
-            "We're a full-service design agency specializing in branding, web design, and creative strategies that elevate businesses.",
-        image: '/https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/service-image-1.jpg',
-        icon: '/https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/service-image-1.jpg',
-    },
-    {
-        id: 2,
-        title: 'Web Development',
-        to: "/contact"
-    },
-    {
-        id: 3,
-        title: '3D Designs',
-        to: "/about"
-    },
-    {
-        id: 4,
-        title: 'Digital Marketing Design',
-        to: "/about"
 
-    },
-    {
-        id: 5,
-        title: 'Motion Graphics',
-        to: "/contact"
-    },
+
+const services = [
+  {
+    id: 1,
+    title: 'Graphic Designing',
+    to: '/portfolio',
+  },
+  {
+    id: 2,
+    title: 'UI and Interactive Design',
+    to: '/portfolio',
+  },
+  {
+    id: 3,
+    title: 'Advertising and Marketing Design',
+    to: '/portfolio',
+  },
+  {
+    id: 4,
+    title: 'Motion Graphics and Animation',
+    to: '/portfolio',
+  },
+  {
+    id: 5,
+    title: 'Packaging Design',
+    to: '/portfolio',
+  },
+  {
+    id: 6,
+    title: 'Game Design',
+    to: '/portfolio',
+  },
+  {
+    id: 7,
+    title: 'Illustration',
+    to: '/portfolio',
+  },
+  {
+    id: 8,
+    title: 'Publication and Typographic Design',
+    to: '/portfolio',
+  },
+   {
+    id: 9,
+    title: 'Web design',
+    to: '/portfolio',
+  }
 ];
+
 const Allservices = () => {
 
 
@@ -52,8 +70,11 @@ const Allservices = () => {
                         Our innovative <span className="text-lab">services</span>
                     </h2>
                 </div>
-                <button className="bg-lab hover:bg-yellow-500 text-black px-5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2">
-                    View All Services <FaPlus className="text-xs" />
+                <button className="bg-lab hover:bg-yellow-500 text-black px-5 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 " >
+                   
+                   <Link to={"/portfolio"} className='flex justify-center items-center '>
+                    View All Services
+                   </Link>
                 </button>
             </div>
 
@@ -91,9 +112,9 @@ const Allservices = () => {
                         <div className="absolute bottom-0 left-0 right-0 p-6 bg-black/60 backdrop-blur-lg text-white rounded-b-3xl">
                             <div className="flex items-center gap-4 mb-2">
                                 <img
-                                    src={activeService.icon || "https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/service-image-1.jpg"}
+                                    src={activeService.icon || "public/A-One - Logo-02.jpeg"}
                                     alt="Icon"
-                                    className="w-10 h-10 bg-lab rounded-full p-2"
+                                    className="w-16 h-16 rounded-full p-2"
                                 />
                                 <h3 className="text-lg font-bold">{activeService.title}</h3>
                             </div>
@@ -101,7 +122,10 @@ const Allservices = () => {
                                 {activeService.description || 'Service description goes here.'}
                             </p>
                             <button className="mt-4 text-lab font-semibold flex items-center gap-1 text-sm">
-                                Read More <FaPlus className="text-xs" />
+                                
+                                <Link to={"/portfolio"} className='flex justify-center items-center '>
+                                Read More <FaPlus className="text-xs mx-2" />
+                                </Link>
                             </button>
                         </div>
                     </div>

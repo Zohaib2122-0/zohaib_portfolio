@@ -46,7 +46,7 @@ const ProjectsPage = () => {
   });
 
   return (
-    <div className="relative min-h-screen bg-darkbg p-20">
+    <div className="relative min-h-screen bg-darkbg p-6 lg:p-14">
       {/* Breadcrumbs */}
        <div className="mb-8  rounded-2xl bg-[#1f1f1f] ">
                         <div className='p-4'>
@@ -86,7 +86,7 @@ const ProjectsPage = () => {
       </div>
 
       {/* Project Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2 lg:p-96">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((proj) => {
             const thumbnailUrl =

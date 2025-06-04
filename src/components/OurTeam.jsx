@@ -23,7 +23,7 @@ const teamMembers = [
 ];
 const OurTeam = () => {
     return (
-        <div className="bg-darkbg text-white py-16 px-" >
+        <div className="bg-darkbg text-white py-8 " >
             <div className="max-w-7xl mx-auto  p-10 ">
                 {/* Header Section */}
                 <div className="flex justify-between items-center mb-12 ">
@@ -36,10 +36,17 @@ const OurTeam = () => {
                             The minds behind the <span className="text-lab">magic</span>
                         </h2>
                     </div>
-                    <button className="bg-lab text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-lab transition-colors flex items-center">
-                        All Team Members
-                        <span className="ml-2">→</span>
+                    <button className="bg-lab text-gray-900 px-4 w-32  py-1 rounded-full font-medium hover:bg-lab transition-colors flex items-center">
+                        Our Team 
+                        {/* <span className="ml-2">→</span> */}
                     </button>
+
+                    {/* <button className="hidden lg:flex bg-lab text-gray-900 px-6 py-3 rounded-full font-medium hover:bg-lab transition-colors items-center">
+                        Our Team
+                        <span className="ml-2">→</span>
+                    </button> */}
+
+
                 </div>
 
                 {/* Team Grid */}

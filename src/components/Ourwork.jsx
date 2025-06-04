@@ -32,12 +32,15 @@ const Ourwork = () => {
             Our design <span className="text-lab">masterpieces</span>
           </h2>
         </div>
-        <button className="bg-lab text-black px-6 py-2 rounded-xl text-sm font-medium hover:scale-105 transition">
+        <div className=''>
+        <button className="bg-lab  text-black px-6 py-2 rounded-xl text-sm font-medium hover:scale-105 transition ">
           View All Portfolio <span className="ml-2">→</span>
         </button>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  px-16">
+{/* display */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  lg:px-8  ">
         {projects.map((project) => (
           <div
             key={project.id}

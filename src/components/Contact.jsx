@@ -11,7 +11,7 @@ export const ContactUs = () => {
                 {/* Header */}
                 <div className="max-w-7xl mx-auto ">
                     <div className="mb-8  rounded-2xl bg-[#1f1f1f] ">
-                        <div className='p-4'>
+                        <div className='p-4 lg:p-10'>
 
                             <h1 className="text-6xl md:text-7xl text-gray-300 font-semibold mb-4 ">
                                 Contact <span className="text-lab">us</span>
@@ -27,9 +27,9 @@ export const ContactUs = () => {
                     </div>
 
                     {/* Main Content */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20 p-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20 p-6 lg:p-12 ">
                         {/* Left Side - Contact Info */}
-                        <div className="">
+                        <div className=" ">
                             <div className="mb-12">
                                 <div className="flex items-center gap-2 mb-8">
                                     <span className="text-lab text-lg">✦</span>

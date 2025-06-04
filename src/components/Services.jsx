@@ -4,48 +4,51 @@ import Toolbox from './Toolbox';
 
 const Services = () => {
 
- 
+
     const services = [
-    {
-        id: 1,
-        title: "Web Design",
-        description: "Crafting beautiful, user-friendly websites.",
-        image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format"
-    },
-    {
-        id: 2,
-        title: "UI and Interactive Design",
-        description: "Designing intuitive and engaging interfaces.",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format"
-    },
-    {
-        id: 3,
-        title: "Advertising and Marketing Design",
-        description: "Creating visuals that boost brand awareness.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop&auto=format"
-    },
-    {
-        id: 4,
-        title: "Motion Graphics and Animation",
-        description: "Bringing designs to life through motion.",
-        image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format"
-    },
-    {
-        id: 5,
-        title: "Packaging Design",
-        description: "Designing attractive and functional packaging.",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format"
-    },
-    {
-        id: 6,
-        title: "Game Design",
-        description: "Creating immersive and interactive gaming experiences.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop&auto=format"
-    }
-];
+        {
+            id: 1,
+            title: "Web Design",
+            description: "Crafting beautiful, user-friendly websites.",
+            image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format"
+        },
+        {
+            id: 2,
+            title: "UI and Interactive Design",
+            description: "Designing intuitive and engaging interfaces.",
+            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format"
+        },
+        {
+            id: 3,
+            title: "Advertising and Marketing Design",
+            description: "Creating visuals that boost brand awareness.",
+            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop&auto=format"
+        },
+        {
+            id: 4,
+            title: "Motion Graphics and Animation",
+            description: "Bringing designs to life through motion.",
+            image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format"
+        },
+        {
+            id: 5,
+            title: "Packaging Design",
+            description: "Designing attractive and functional packaging.",
+            image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format"
+        },
+        {
+            id: 6,
+            title: "Game Design",
+            description: "Creating immersive and interactive gaming experiences.",
+            image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop&auto=format"
+        }
+    ];
 
     return (
-        <div className="bg-darkbg text-white min-h-screen py-16 px-6 relative overflow-hidden">
+        <div>
+
+        
+        <div className="bg-darkbg text-white min-h-screen py-16 px-4 lg:px-16 relative overflow-hidden">
 
             <div className="max-w-7xl mx-auto relative z-10 0 ">
                 {/* Header */}
@@ -115,6 +118,7 @@ const Services = () => {
 
                
             </div>
+        </div>
             <Projectcompleted />
             <Toolbox />
         </div>

@@ -59,7 +59,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} ref={formRef}>
-      <div className="rounded-2xl p-5 bg-[#1f1f1f]">
+      <div className="rounded-2xl lg:p-6  bg-[#1f1f1f]">
         <div className="mb-8">
           <h2 className="text-4xl text-gray-300 md:text-5xl font-bold leading-tight">
             Get a <span className="text-lab">free advise</span>

@@ -56,8 +56,8 @@ const responsive = {
 
 const Testimonial = () => {
   return (
-    <div className="w-full py-1 bg-darkbg">
-      <div className="max-w-6xl mx-auto px-4 p-10 bg-[#1F1F1F] rounded-2xl border-2 border-gray-700">
+    <div className="w-full px-4 bg-darkbg">
+      <div className="max-w-[95%] mx-auto px-4 p-10 bg-[#1F1F1F] rounded-2xl border-2 border-gray-700 ">
         <h2 className="text-3xl font-bold text-center text-lab mb-10">
           What Our Clients Say
         </h2>

@@ -76,7 +76,7 @@ const BankTransactionconfirmation = () => {
     <div>
     <div className="">
   
-    <div className="w-full lg:w-full  bg-darkbg py-20 ">
+    <div className="w-full lg:w-full px-3  bg-darkbg py-16 ">
       <form
         onSubmit={handleSubmit}
         className=" w-full max-w-md mx-auto p-10 border-2 border-gray-700 bg-[#1f1f1f] rounded-xl"

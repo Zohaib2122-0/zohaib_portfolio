@@ -56,9 +56,9 @@ export const Navv = () => {
                 <Link to={"/portfolio"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   portfolio
                 </Link>
-                <Link to={"/upload"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
+                {/* <Link to={"/upload"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   upload
-                </Link>
+                </Link> */}
               </div>
 
 
@@ -114,9 +114,9 @@ export const Navv = () => {
             </Link>
 
 
-            <Link to={"/upload"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
+            {/* <Link to={"/upload"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               upload
-            </Link>
+            </Link> */}
             <button
 
               className="py-2 px-3 bg-lab text-white font-medium rounded-lg hover:bg-yellow-500 transition"

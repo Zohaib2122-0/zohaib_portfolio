@@ -33,7 +33,7 @@ export const projectapi = createApi({
     }),
 
     // 3. Delete Message
-    deleteMessage: builder.mutation({
+    deleteproject: builder.mutation({
       query: (id) => ({
         url: `/project/delete/${id}`,
         method: 'DELETE',
@@ -44,7 +44,7 @@ export const projectapi = createApi({
 });
 
 export const {
-  useDeleteMessageMutation,
+useDeleteprojectMutation,
   useGetprojectsQuery,
   useUploadprojectMutation
 } = projectapi;

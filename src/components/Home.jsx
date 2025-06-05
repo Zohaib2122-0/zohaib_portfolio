@@ -7,11 +7,12 @@ import Projectcompleted from './Projectcompleted'
 import OurTeam from './OurTeam'
 import Testimonial from './Testimonial'
 import { Faqs } from './Faqs'
+import HeroSection from './Herosectoin'
 
 const Home = () => {
     return (
         <div>
-
+<HeroSection/>
             <Allservices />
             <Ourwork />
             <Toolbox />

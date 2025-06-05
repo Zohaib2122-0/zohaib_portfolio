@@ -8,6 +8,7 @@ import Home from './components/Home'
 import MessagesList from './components/Messageslist'
 import Uploadproject from './components/uploadporject'
 import ProjectsPage from './components/projectpage'
+import Projectsetup from './components/Projectsetup'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/admin' element={<Uploadproject />} />
           <Route path='/portfolio' element={<ProjectsPage />} />
+          <Route path='/portfolio/projects' element={<Projectsetup />} />
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/queries' element={<MessagesList/>} />
           <Route path='/about' element={<About />} />

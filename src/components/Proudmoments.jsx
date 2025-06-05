@@ -1,5 +1,6 @@
 import { useInView, motion } from 'framer-motion';
 import React, { useRef } from 'react'
+import { Link } from 'react-router-dom';
 
 const Proudmoments = () => {
 
@@ -38,12 +39,14 @@ const Proudmoments = () => {
 
                             {/* CTA Button */}
                             <div className="pt-4">
+                                 <Link to={"/contact"}>
                                 <button className="bg-lab text-gray-900 px-3 py-2 rounded-2xl font-medium text-lg flex items-center gap-3 hover:bg-yellow-300 transition-colors">
                                     Let's Get Started !
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                     </svg>
                                 </button>
+                                </Link>
                             </div>
                         </motion.div>
                         {/* Decorative Green Dot */}

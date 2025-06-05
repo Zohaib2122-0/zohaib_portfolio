@@ -9,14 +9,9 @@ const HeroSection = () => {
     const isInView = useInView(ref, { once: true }); // only once per scroll
   return (
     <div className="relative w-full h-screen bg-darkbg text-white overflow-hidden">
-           
-      {/* <img
-        src="https://avatars.mds.yandex.net/i?id=38d025ac3eba83e977cf1d7fda4fdd3aa9aa82fa-7543894-images-thumbs&n=13"
-        alt="hero background"
-        className=" absolute inset-0 w-full h-full object-cover object-center opacity-40"
-      />  */}
+     
       <img
-        src="/public/77b25957-4c7b-438a-a87c-dfbdcff5d457-removebg-preview (1).png"
+        src="https://res.cloudinary.com/dlrinxri6/image/upload/v1749107356/products/x2smj6czswhwjka6eudj.png"
         alt="hero background"
         className=" absolute inset-0 w-full h-full object-cover object-center opacity-60"
       /> 

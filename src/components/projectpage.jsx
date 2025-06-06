@@ -1,11 +1,11 @@
 
 
 import React, { useState } from 'react';
-import { useGetprojectsQuery } from './redux/projectapislice'; 
+import { useGetprojectsQuery } from './redux/projectapislice';
 
 const ProjectsPage = () => {
   const {
-    data: rawResponse,  
+    data: rawResponse,
     error,
     isLoading,
     isError,
@@ -13,6 +13,25 @@ const ProjectsPage = () => {
 
   const [selectedImage, setSelectedImage] = useState(null);
   const [searchQuery, setSearchQuery] = useState(''); // 🔍 Search input
+
+
+
+  const categories = [
+    "Web design",
+    "Advertising design",
+    "Branding",
+    "Packaging design",
+    "Banners",
+    "Business card design",
+    "Brochures",
+    "thumbnail",
+    "uiux",
+    "logo design"
+  ];
+
+  const [selectedCategory, setSelectedCategory] = useState(''); // ⬇️ Dropdown selected value
+
+
 
   if (isLoading) {
     return (
@@ -37,32 +56,45 @@ const ProjectsPage = () => {
     : [];
 
   // 🔍 Filter logic based on title or category
+  // const filteredProjects = projectsArray.filter((proj) => {
+  //   const query = searchQuery.toLowerCase();
+  //   return (
+  //     proj.title?.toLowerCase().includes(query) ||
+  //     proj.category?.toLowerCase().includes(query)
+  //   );
+  // });
+
   const filteredProjects = projectsArray.filter((proj) => {
     const query = searchQuery.toLowerCase();
-    return (
+    const matchesSearch =
       proj.title?.toLowerCase().includes(query) ||
-      proj.category?.toLowerCase().includes(query)
-    );
+      proj.category?.toLowerCase().includes(query);
+
+    const matchesCategory =
+      selectedCategory === '' || proj.category?.toLowerCase() === selectedCategory.toLowerCase();
+
+    return matchesSearch && matchesCategory;
   });
+
 
   return (
     <div className="relative min-h-screen bg-darkbg p-6 lg:p-14">
       {/* Breadcrumbs */}
-       <div className="mb-8  rounded-2xl bg-[#1f1f1f] ">
-                        <div className='p-4'>
+      <div className="mb-8  rounded-2xl bg-[#1f1f1f] ">
+        <div className='p-4'>
 
-                            <h1 className="text-6xl md:text-7xl text-gray-300 font-semibold mb-4 ">
-                              Portfolio
-                            </h1>
-                            <div className="flex items-center gap-2 text-gray-300">
-                                <span>Home</span>
-                                <span>/</span>
-                                <span>Portfolio</span>
-                            </div>
+          <h1 className="text-6xl md:text-7xl text-gray-300 font-semibold mb-4 ">
+            Portfolio
+          </h1>
+          <div className="flex items-center gap-2 text-gray-300">
+            <span>Home</span>
+            <span>/</span>
+            <span>Portfolio</span>
+          </div>
 
-                        </div>
+        </div>
 
-                    </div>
+      </div>
       <div className="flex items-center text-sm text-gray-400 mb-8">
         <a href="#" className="text-green-400 hover:text-green-300">All Projects</a>
         <span className="mx-2">/</span>
@@ -74,16 +106,42 @@ const ProjectsPage = () => {
         <span className="ml-auto w-2 h-2 bg-lab rounded-full"></span>
       </div>
 
-      {/* 🔍 Search Bar */}
-      <div className="mb-10">
-        <input
-          type="text"
-          placeholder="Search by title or category..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full md:w-1/2 p-2 rounded-lg bg-[#1f1f1f] text-white border border-gray-600 placeholder-gray-400"
-        />
+
+      <div className='lg:flex lg:justify-between'>
+
+
+        {/* 🔍 Search Bar */}
+        <div className="mb-10">
+          <input
+            type="text"
+            placeholder="Search by title or category..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full md:w-1/2 lg:w-56 p-2 rounded-lg bg-[#1f1f1f] text-white border border-gray-600 placeholder-gray-400"
+          />
+        </div>
+
+
+
+        {/* category filtering */}
+        <div className="mb-4">
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="w-full  md:w-1/2 p-2 lg:w-56 rounded-lg bg-[#1f1f1f] text-white border border-gray-600"
+          >
+            <option value="">All Categories</option>
+            {categories.map((cat, idx) => (
+              <option key={idx} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
+        </div>
+
+
       </div>
+
 
       {/* Project Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2 lg:p-96">

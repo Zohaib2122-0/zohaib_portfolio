@@ -27,6 +27,21 @@ const BankTransactionconfirmation = () => {
     }));
   };
 
+
+  
+  const categories = [
+    "Web design",
+    "Advertising design",
+    "Branding",
+    "Packaging design",
+    "Banners",
+    "Business card design",
+    "Brochures",
+    "thumbnail",
+    "uiux",
+    "logo design"]
+
+
   // Handle file input change
   const handleFileChange = (e) => {
     const selectedimage = e.target.files[0];
@@ -113,20 +128,22 @@ const BankTransactionconfirmation = () => {
             {/* category & title side by side on larger screens */}
             <div className="flex flex-col md:flex-row md:space-x-4">
               {/* category */}
-              <div className="mb-4 w-full">
+             <div className="mb-4 w-full">
                 <label className="text-gray-300 text-sm mb-2 block">
                   Category
                 </label>
-                <input
-                  type="text"
+                <select
                   name="category"
                   value={formData.category}
                   onChange={handleChange}
-                  className="w-full h-12 bg-[#1E1E1E] text-white px-4 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="category"
+                  className="w-full h-12 bg-[#1E1E1E] text-white px-2 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
-                />
-
+                >
+                  <option value="" disabled>Select a category</option>
+                  {categories.map((cat, index) => (
+                    <option key={index} value={cat}>{cat}</option>
+                  ))}
+                </select>
               </div>
 
               {/* title */}

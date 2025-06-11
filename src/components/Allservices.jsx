@@ -123,22 +123,10 @@ const Allservices = () => {
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-6  bg-black/60 backdrop-blur-lg text-white rounded-b-3xl">
                             <div className="flex items-center gap-4 mb-2">
-                                <img
-                                    src={activeService.icon || "public/A-One - Logo-02.jpeg"}
-                                    alt="Icon"
-                                    className="w-16 h-16 rounded-full p-2"
-                                />
+                  
                                 <h3 className="text-lg font-bold text-gray-300 ">{activeService.title}</h3>
                             </div>
-                            <p className="text-sm text-gray-300 ">
-                                {activeService.description || 'Service description goes here.'}
-                            </p>
-                            <button className="mt-4 text-lab font-semibold flex items-center gap-1 text-sm">
-                                
-                                <Link to={"/portfolio"} className='flex justify-center items-center '>
-                                Read More <FaPlus className="text-xs mx-2" />
-                                </Link>
-                            </button>
+                        
                         </div>
                     </div>
                 )}

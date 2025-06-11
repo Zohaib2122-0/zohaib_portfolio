@@ -30,7 +30,7 @@ export const Navv = () => {
 
 
                 <img className='w-10 h-10 rounded-lg' src="https://res.cloudinary.com/dv0rjcjfe/image/upload/v1749063518/products/f3g9becxiakyypuyiin8.jpg" alt="" />
-                
+
               </Link>
             </div>
             <div className="hidden md:flex space-x-4 ml-52 mt-4">
@@ -53,12 +53,10 @@ export const Navv = () => {
                 <Link to={"/services"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   Services
                 </Link>
-                <Link to={"/portfolio"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
-                  portfolio
+                <Link to={"/contact"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
+                  contact
                 </Link>
-                {/* <Link to={"/upload"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
-                  upload
-                </Link> */}
+           
               </div>
 
 
@@ -70,8 +68,8 @@ export const Navv = () => {
 
             <button
               className="py-2 px-3 bg-lab text-black font-medium rounded-lg hover:bg-yellow-300 hidden lg:block transition ">
-              <Link to={"/contact"}>
-                Contact Us
+              <Link to={"/portfolio"}>
+             Portfolio
               </Link>
             </button>
 
@@ -112,23 +110,29 @@ export const Navv = () => {
             <Link to={"/about"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               About
             </Link>
+            <Link to={"/contact"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
+              About
+            </Link>
 
 
             {/* <Link to={"/upload"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               upload
             </Link> */}
-            <button
+            
+          <div className='flex items-center '>
+              <button
 
-              className="py-2 px-3 bg-lab text-white font-medium rounded-lg hover:bg-yellow-500 transition"
-            >
+                className="py-2 px-3 bg-lab w-40 text-white font-medium rounded-lg hover:bg-yellow-500 transition"
+              >
 
-              <Link to={"/contact"}>
-                <div className=' text-white scale-100   w-32 text-sm'>
-                  Contact Us
-                </div>
-              </Link>
-            </button>
-
+                <Link to={"/portfolio"}>
+                  <div className=' text-white scale-100   w-32 text-sm'>
+                    Portfolio
+                  </div>
+                </Link>
+              </button>
+            </div>
+            
           </div>
         </div>
       )}

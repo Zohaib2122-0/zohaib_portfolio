@@ -135,3 +135,33 @@ const Services = () => {
 }
 
 export default Services
+
+
+
+
+
+
+
+//  <div className="relative w-full h-[280px] bg-darkbg text-white overflow-hidden">
+//       <video
+//         className="absolute inset-0 w-fit h-fit object-cover  object-center "
+//         autoPlay
+//         muted
+//         loop
+//         playsInline
+//       >
+//         <source src={showcase} type="video/mp4" />
+//       </video>
+
+//       {/* <video
+//         className="absolute inset-0 w-full h-full object-cover  object-center "
+//         autoPlay
+//         muted
+//         loop
+//         playsInline
+//       >
+//         <source src={showcase} type="video/mp4" />
+//       </video> */}
+
+//     </div>
+

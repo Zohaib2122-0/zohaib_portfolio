@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-
+import showcase from "../assets/images/showcase.mp4"
 
 const HeroSection = () => {
   const ref = useRef(null);
@@ -23,7 +23,8 @@ const HeroSection = () => {
         loop
         playsInline
       >
-        <source src="public/Cybersecurity Landing Page  Web design Landing page design Business website design.mp4" type="video/mp4" />
+        <source src={showcase} type="video/mp4" />
+        {/* <source src="public/Cybersecurity Landing Page  Web design Landing page design Business website design.mp4" type="video/mp4" /> */}
   
       </video>
 

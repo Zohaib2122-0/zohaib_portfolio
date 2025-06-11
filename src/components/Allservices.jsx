@@ -3,58 +3,58 @@ import React, { useState } from 'react';
 import { FaPlus, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-
-
+// import Logo from "../assets/images/business.PNG";
+// import business from "../assets/images/business.PNG"
 const services = [
   {
     id: 1,
     title: 'Full-Stack Web Development',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 2,
     title: 'Custom React Applications',
-    to: '/portfolio',
+    to: '/contact',
   },
     {
     id: 3,
     title: 'Custom Next.js Applications',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 4,
     title: 'Node.js & Express API Development',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 5,
     title: 'Admin Dashboards & CMS Solutions',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 6,
     title: 'Authentication & User Management',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 7,
     title: 'RESTful & GraphQL API Integration',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 8,
     title: 'Third-Party API Integration (Stripe, Firebase, etc.)',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 9,
     title: 'Responsive Web Design with Tailwind CSS',
-    to: '/portfolio',
+    to: '/contact',
   },
   {
     id: 10,
     title: 'MongoDB Database Design',
-    to: '/portfolio',
+    to: '/contact',
   }
 ];
 
@@ -117,7 +117,7 @@ const Allservices = () => {
                     <div className="relative w-full md:w-1/2 ">
                         <img
                             // src={activeService.image || 'https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/service-image-1.jpg'}
-                            src={'public/ata.PNG'}
+                            src="https://res.cloudinary.com/dlrinxri6/image/upload/v1749630930/products/dy1oauzkqm4oljapzvyv.png"
                             alt="Service Visual"
                             className="rounded-3xl w-full h-auto object-cover"
                         />

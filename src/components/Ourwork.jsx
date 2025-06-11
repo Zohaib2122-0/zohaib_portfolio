@@ -5,7 +5,6 @@ import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
-
 const Ourwork = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // only once per scroll
@@ -14,19 +13,19 @@ const projects = [
     id: 1,
     title: "E-commerce Web Application",
     description: "Developed a full-stack MERN e-commerce platform with secure user authentication, dynamic product management, and Stripe payment integration.",
-    image: "public/77b25957-4c7b-438a-a87c-dfbdcff5d457-removebg-preview (1).png", // Replace with actual image path
+    image: "https://res.cloudinary.com/dlrinxri6/image/upload/v1749631097/products/fddizg1ihbjihgpvljip.png"
   },
   {
     id: 2,
     title: "Real-Time Chat Application",
     description: "Built a real-time messaging app using React, Node.js, Socket.IO, and MongoDB, featuring private chats, group rooms, and live typing indicators.",
-    image: "public/Capture.ks.PNG", // Replace with actual image path
+    image: "https://res.cloudinary.com/dlrinxri6/image/upload/v1749631051/products/fsprratvqleqbyuigp9z.png" 
   },
   {
     id: 3,
     title: "Admin Dashboard & CMS",
     description: "Designed a responsive admin panel using React and Tailwind, with backend management APIs powered by Express and MongoDB for content control and analytics.",
-    image: "public/Capture.pannel.PNG", // Replace with actual image path
+    image: "https://res.cloudinary.com/dlrinxri6/image/upload/v1749631133/products/er0ulpwgyl6p2afne3et.png"
   },
 ];
 

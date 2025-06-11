@@ -15,37 +15,37 @@ const Services = () => {
     id: 1,
     title: "Full-Stack Web Development",
     description: "Building dynamic web applications using MongoDB, Express.js, React, and Node.js.",
-    image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format"
+    image: "https://i.pinimg.com/736x/52/19/d9/5219d9b3f4606ed553479e91b2b9b8d2.jpg"
   },
   {
     id: 2,
     title: "Frontend Development with React",
     description: "Developing responsive, high-performance UIs with React and modern JavaScript.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format"
+    image: "https://i.pinimg.com/736x/35/23/7b/35237b71b5a926c82446fd96baee4b7c.jpg"
   },
   {
     id: 3,
     title: "Next.js Development",
     description: "Creating fast, SEO-friendly web apps with server-side rendering and API routes in Next.js.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop&auto=format"
+    image: "https://i.pinimg.com/736x/73/d0/97/73d097290223416d69c7e9765a0c4a27.jpg"
   },
   {
     id: 4,
     title: "RESTful & API Integration",
     description: "Designing and integrating robust RESTful APIs for seamless data interaction.",
-    image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?w=400&h=300&fit=crop&auto=format"
+    image: "https://i.pinimg.com/736x/3d/64/d0/3d64d065313c7fc92e53d82350760d64.jpg"
   },
   {
     id: 5,
     title: "Authentication & Security",
     description: "Implementing secure login systems with JWT, OAuth, and session handling.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format"
+    image: "https://i.pinimg.com/736x/d6/26/e3/d626e3f52bb78222aabd7b1a5bc6450d.jpg"
   },
   {
     id: 6,
     title: "Database Design & Management",
     description: "Structuring and managing scalable databases using MongoDB and Mongoose.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop&auto=format"
+    image: "https://i.pinimg.com/736x/9b/e1/61/9be1611e91502cfc144d190c79323f05.jpg"
   }
 ];
 
@@ -81,7 +81,7 @@ const Services = () => {
                             >
                                 {/* Service Image */}
 
-                                <div className="relative h-64 overflow-hidden">
+                                <div className="relative h-60 w-full object-cover overflow-hidden">
                                     <img
                                         src={service.image}
                                         alt={service.title}

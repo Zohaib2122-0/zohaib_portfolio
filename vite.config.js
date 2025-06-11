@@ -12,6 +12,7 @@
 
 export default defineConfig({
   server: {
+      assetsInclude: ['**/*.PNG'],
     // host: "192.168.100.55",
     host: true,
     proxy: {

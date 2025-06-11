@@ -68,7 +68,7 @@ const projects = [
                 ref={ref}
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={isInView ? { scale: 1, opacity: 1 } : {}}
-                transition={{ duration: 0.5, ease: "easeOut" }}
+                transition={{ duration:0.3, ease: "easeOut" }}
               // className="flex items-center gap-4 mb-1 justify-center"
               >
                 <Link to={"/portfolio"}>

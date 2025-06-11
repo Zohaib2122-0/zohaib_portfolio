@@ -28,21 +28,22 @@ const ContactForm = () => {
     setIsLoading(true);
     setIsSuccess(false);
     setIsError(false);
-
-    // emailjs
-    //   .sendForm(
-    //     'service_qe3mfon',       // Replace with your EmailJS Service ID
-    //     'template_mbkpt6e',      // Replace with your EmailJS Template ID
-    //     formRef.current,         // This passes the form fields
-    //     'WdL1X84m5EeScjfrG'        // Replace with your EmailJS Public Key
-    //   )
+    // zohaib
     emailjs
       .sendForm(
-        'service_vcpnhwv',       // Replace with your EmailJS Service ID
+        'service_qe3mfon',       // Replace with your EmailJS Service ID
         'template_mbkpt6e',      // Replace with your EmailJS Template ID
         formRef.current,         // This passes the form fields
-        'w3qZXG8SgYlc9ir2R'        // Replace with your EmailJS Public Key
+        'WdL1X84m5EeScjfrG'        // Replace with your EmailJS Public Key
       )
+      // hammad credentials
+      // emailjs
+      //   .sendForm(
+      //     'service_vcpnhwv',       // Replace with your EmailJS Service ID
+      //     'template_mbkpt6e',      // Replace with your EmailJS Template ID
+      //     formRef.current,         // This passes the form fields
+      //     'w3qZXG8SgYlc9ir2R'        // Replace with your EmailJS Public Key
+      //   )
       .then(
         (result) => {
           console.log('Email sent:', result.text);

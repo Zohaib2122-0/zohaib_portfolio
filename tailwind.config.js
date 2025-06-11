@@ -1,11 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -18,10 +10,11 @@ export default {
 
       colors: {
         darkbg: "#141414",
-        // cont: "#1F1F1F ",
         cont: "#b9b8b4",
+        // lab: "#6d8e9b"
         lab: "#e4e46d"
       }
+      
 
     },
   },

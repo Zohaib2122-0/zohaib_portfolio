@@ -12,13 +12,13 @@ import HeroSection from './Herosectoin'
 const Home = () => {
     return (
         <div>
-<HeroSection/>
+            <HeroSection />
             <Allservices />
             <Ourwork />
             <Toolbox />
             <Faqs />
 
-            <Proudmoments />
+            {/* <Proudmoments /> */}
             <Projectcompleted />
             <OurTeam />
             <Testimonial />

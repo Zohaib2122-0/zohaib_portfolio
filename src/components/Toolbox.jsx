@@ -10,63 +10,64 @@ const Toolbox = () => {
 
 
   const tools = [
-    {
-      name: 'Figma',
-      category: 'Design Tool',
-      icon: '🌐', // Represents web-based design collaboration
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-red-500'
-    },
-    {
-      name: 'Framer',
-      category: 'Design Tool',
-      icon: '⚙️', // Represents prototyping and interaction
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-blue-500'
-    },
-    {
-      name: 'Illustrator',
-      category: 'Design Tool',
-      icon: '🖌️', // Represents illustration/vector design
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-orange-500'
-    },
-    {
-      name: 'Adobe Xd',
-      category: 'Design Tool',
-      icon: '🧩', // Represents UI/UX layout tool
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-purple-500'
-    },
-    {
-      name: 'Indesign',
-      category: 'Design Tool',
-      icon: '📄', // Represents publishing and page layout
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-pink-500'
-    },
-    {
-      name: 'Photoshop',
-      category: 'Design Tool',
-      icon: '🖼️', // Represents photo editing
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-blue-600'
-    },
-    {
-      name: 'Lightroom',
-      category: 'Design Tool',
-      icon: '📷', // Represents photo correction and lighting
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-blue-400'
-    },
-    {
-      name: 'Incopy',
-      category: 'Design Tool',
-      icon: '✍️', // Represents editorial/copy editing
-      bgColor: 'bg-gray-800',
-      iconBg: 'bg-red-400'
-    }
-  ];
+  {
+  name: 'Next.js',
+  category: 'React Framework',
+  icon: '🚀',
+  bgColor: 'bg-gray-800',
+  iconBg: 'bg-black',
+},
+  {
+    name: 'Postman',
+    category: 'API Testing Tool',
+    icon: '📬',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-orange-500',
+  },
+  {
+    name: 'MongoDB Compass',
+    category: 'Database GUI',
+    icon: '🗄️',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-green-600',
+  },
+  {
+    name: 'Git & GitHub',
+    category: 'Version Control',
+    icon: '🌱',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-black',
+  },
+  {
+    name: 'Node.js',
+    category: 'Backend Runtime',
+    icon: '⚙️',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-green-700',
+  },
+  {
+    name: 'React',
+    category: 'Frontend Library',
+    icon: '⚛️',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-blue-400',
+  },
+  {
+    name: 'Tailwind CSS',
+    category: 'Styling Framework',
+    icon: '🎨',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-sky-500',
+  },
+  {
+    name: 'Firebase',
+    category: 'Authentication/Hosting',
+    icon: '🔥',
+    bgColor: 'bg-gray-800',
+    iconBg: 'bg-yellow-500',
+  }
+];
+
 
   return (
 

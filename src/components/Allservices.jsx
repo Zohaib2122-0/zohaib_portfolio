@@ -8,50 +8,56 @@ import { Link } from 'react-router-dom';
 const services = [
   {
     id: 1,
-    title: 'Graphic Designing',
+    title: 'Full-Stack Web Development',
     to: '/portfolio',
   },
   {
     id: 2,
-    title: 'UI and Interactive Design',
+    title: 'Custom React Applications',
     to: '/portfolio',
   },
-  {
+    {
     id: 3,
-    title: 'Advertising and Marketing Design',
+    title: 'Custom Next.js Applications',
     to: '/portfolio',
   },
   {
     id: 4,
-    title: 'Motion Graphics and Animation',
+    title: 'Node.js & Express API Development',
     to: '/portfolio',
   },
   {
     id: 5,
-    title: 'Packaging Design',
+    title: 'Admin Dashboards & CMS Solutions',
     to: '/portfolio',
   },
   {
     id: 6,
-    title: 'Game Design',
+    title: 'Authentication & User Management',
     to: '/portfolio',
   },
   {
     id: 7,
-    title: 'Illustration',
+    title: 'RESTful & GraphQL API Integration',
     to: '/portfolio',
   },
   {
     id: 8,
-    title: 'Publication and Typographic Design',
+    title: 'Third-Party API Integration (Stripe, Firebase, etc.)',
     to: '/portfolio',
   },
-   {
+  {
     id: 9,
-    title: 'Web design',
+    title: 'Responsive Web Design with Tailwind CSS',
+    to: '/portfolio',
+  },
+  {
+    id: 10,
+    title: 'MongoDB Database Design',
     to: '/portfolio',
   }
 ];
+
 
 const Allservices = () => {
 
@@ -92,9 +98,9 @@ const Allservices = () => {
                             <button
                                 key={service.id}
                                 onClick={() => setActiveId(service.id)}
-                                className={` flex items-center w-full justify-between px-6 py-4 rounded-2xl transition-all duration-300 font-semibold text-left text-white ${activeId === service.id
-                                    ? 'bg-lab text-black'
-                                    : 'bg-[#1f1f1f] hover:bg-[#2c2c2c]'
+                                className={` flex items-center w-full hover:text-darkbg justify-between px-6 py-4 rounded-2xl transition-all duration-300 font-semibold text-left text-gray-300 ${activeId === service.id
+                                    ? 'bg-lab text-black  '
+                                    : 'bg-[#1f1f1f] hover:bg-lab  '
                                     }`}
                             >
                                 <span>
@@ -111,20 +117,20 @@ const Allservices = () => {
                     <div className="relative w-full md:w-1/2 ">
                         <img
                             // src={activeService.image || 'https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/service-image-1.jpg'}
-                            src={'https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/service-image-1.jpg'}
+                            src={'public/ata.PNG'}
                             alt="Service Visual"
                             className="rounded-3xl w-full h-auto object-cover"
                         />
-                        <div className="absolute bottom-0 left-0 right-0 p-6 bg-black/60 backdrop-blur-lg text-white rounded-b-3xl">
+                        <div className="absolute bottom-0 left-0 right-0 p-6  bg-black/60 backdrop-blur-lg text-white rounded-b-3xl">
                             <div className="flex items-center gap-4 mb-2">
                                 <img
                                     src={activeService.icon || "public/A-One - Logo-02.jpeg"}
                                     alt="Icon"
                                     className="w-16 h-16 rounded-full p-2"
                                 />
-                                <h3 className="text-lg font-bold">{activeService.title}</h3>
+                                <h3 className="text-lg font-bold text-gray-300 ">{activeService.title}</h3>
                             </div>
-                            <p className="text-sm text-gray-300">
+                            <p className="text-sm text-gray-300 ">
                                 {activeService.description || 'Service description goes here.'}
                             </p>
                             <button className="mt-4 text-lab font-semibold flex items-center gap-1 text-sm">

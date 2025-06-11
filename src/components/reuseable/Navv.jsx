@@ -21,7 +21,7 @@ export const Navv = () => {
 
 
   return (
-    <nav className="bg-darkbg border-b-2  border-gray-700 shadow-md">
+    <nav className="bg-darkbg border-b sticky top-0 left-0 z-20  border-gray-600 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex">

@@ -9,35 +9,36 @@ import { Link } from "react-router-dom";
 const Ourwork = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true }); // only once per scroll
-  const projects = [
-    {
-      id: 1,
-      title: "UI and UX experience",
-      description: "We redesigned Stellar Tech’s website to enhance.",
-      image: "https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/work-image-2.jpg", // Replace with actual image path
-    },
-    {
-      id: 2,
-      title: "Advertising and Marketing Design.",
-      description: "We built a user-friendly Shopping platform for Green Wave Foods.",
-      image: "https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/work-image-1.jpg", // Replace with actual image path
-    },
-    {
-      id: 3,
-      title: "Motion Graphics and Animation",
-      description: "We helped Horizon Real Estate establish a trusted brand identity.",
-      image: "https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/work-image-2.jpg", // Replace with actual image path
-    },
-  ];
-  return (
-    <div>
+const projects = [
+  {
+    id: 1,
+    title: "E-commerce Web Application",
+    description: "Developed a full-stack MERN e-commerce platform with secure user authentication, dynamic product management, and Stripe payment integration.",
+    image: "public/77b25957-4c7b-438a-a87c-dfbdcff5d457-removebg-preview (1).png", // Replace with actual image path
+  },
+  {
+    id: 2,
+    title: "Real-Time Chat Application",
+    description: "Built a real-time messaging app using React, Node.js, Socket.IO, and MongoDB, featuring private chats, group rooms, and live typing indicators.",
+    image: "public/Capture.ks.PNG", // Replace with actual image path
+  },
+  {
+    id: 3,
+    title: "Admin Dashboard & CMS",
+    description: "Designed a responsive admin panel using React and Tailwind, with backend management APIs powered by Express and MongoDB for content control and analytics.",
+    image: "public/Capture.pannel.PNG", // Replace with actual image path
+  },
+];
 
-      <section className="bg-darkbg text-white py-10 px-4 md:px-20 ">
+  return (
+    <div className="bg-darkbg">
+
+      <section className=" text-white  bg-[#1F1F1F] rounded-xl py-10 px-4 md:px-20 ">
         <div className="flex justify-between items-start mb-10  px-16">
           <div>
             <p className="text-sm text-lab mb-2">✨ Our Work</p>
             <h2 className="text-4xl font-semibold">
-              Our design <span className="text-lab">masterpieces</span>
+              Our design <span className="text-lab font-medium text-4xl">masterpieces</span>
             </h2>
           </div>
           <div>
@@ -62,7 +63,7 @@ const Ourwork = () => {
 
             <div
               key={project.id}
-              className="bg-[#1f1f1f] rounded-3xl p-4 pb-8 space-y-4 hover:shadow-xl transition"
+              className="bg-[#1f1f1f] rounded-3xl p-4 pb-8 space-y-4 hover:shadow-xl transition border-1 border-gray-700"
             >
               <motion.div
                 ref={ref}
@@ -80,7 +81,7 @@ const Ourwork = () => {
                       className="rounded-2xl w-full h-[220px] object-cover hover:scale-110 transition duration-500"
                     />
                   </div>
-                  <h3 className="text-gray-300 text-lg font-semibold">
+                  <h3 className="text-gray-300 text-lg font-semibold my-3">
                     {project.title}
                   </h3>
                   <p className="text-gray-400 text-sm">{project.description}</p>

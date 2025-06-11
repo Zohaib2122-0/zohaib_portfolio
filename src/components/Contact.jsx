@@ -52,7 +52,7 @@ export const ContactUs = () => {
                                     </div>
                                     <div>
                                         <h3 className="text-white text-xl font-semibold mb-1">Phone Number</h3>
-                                        <p className="text-gray-400">+92 321 9388364</p>
+                                        <p className="text-gray-400">+92 330 6553479</p>
                                     </div>
                                 </div>
 
@@ -66,7 +66,7 @@ export const ContactUs = () => {
                                     </div>
                                     <div>
                                         <h3 className="text-white text-xl font-semibold mb-1">Email Us</h3>
-                                        <p className="text-gray-400">hammadfreelancer5@gmail.com</p>
+                                        <p className="text-gray-400">zohaib.khaleed@gmail.com</p>
                                     </div>
                                 </div>
 
@@ -84,10 +84,10 @@ export const ContactUs = () => {
                                 </div>
                             </div>
 
-                            
+
                         </div>
 
-<ContactForm/>
+                        <ContactForm />
 
                     </div>
 

@@ -11,35 +11,31 @@ import { motion, useInView } from "framer-motion";
 const testimonials = [
   {
     name: "Ayesha Khan",
-    position: "Software Engineer",
-    message: "This platform helped me grow faster in my career. The team is amazing!",
+    message: "As a developer, I found this platform instrumental in accelerating my coding skills and career growth. The learning environment is incredibly supportive.",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
   },
   {
     name: "Ali Raza",
-    position: "Frontend Developer",
-    message: "Excellent experience! Their support and tools are just top-notch.",
+    message: "Their frontend tools and guidance helped me build cleaner, more efficient UI components. A must-use platform for any frontend developer.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     name: "Sara Iqbal",
-    position: "UI/UX Designer",
-    message: "I’ve improved my design skills thanks to their feedback and courses.",
+    message: "The design-focused courses and real-time feedback significantly boosted my UI/UX design abilities. Highly recommended for creatives.",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
   },
   {
     name: "Bilal Ahmed",
-    position: "Product Manager",
-    message: "Great team, great product. I’d definitely recommend them to anyone.",
+    message: "This platform made product planning and team coordination easier. It’s been a huge asset in improving our workflow and delivery.",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
   },
   {
     name: "Nida Hussain",
-    position: "Marketing Lead",
-    message: "Their customer service is fantastic, and the platform is very easy to use.",
+    message: "From campaign tracking to user analytics, everything is streamlined. The platform is intuitive and great for marketing teams.",
     image: "https://randomuser.me/api/portraits/women/55.jpg",
   },
 ];
+
 
 const responsive = {
   desktop: {
@@ -110,9 +106,9 @@ const Testimonial = () => {
                 <h3 className="text-lg font-semibold text-gray-300">
                   {testimonial.name}
                 </h3>
-                <p className="text-sm text-gray-300 mb-2">
+                {/* <p className="text-sm text-gray-300 mb-2">
                   {testimonial.position}
-                </p>
+                </p> */}
                 <p className="text-gray-300 italic">"{testimonial.message}"</p>
               </div>
 

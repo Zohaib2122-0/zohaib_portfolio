@@ -1,23 +1,23 @@
 import React from 'react'
 const teamMembers = [
     {
-        name: "Joseph G. Brown",
-        role: "Director",
+        name: "Zohaib khalid",
+        role: "Full stack developer",
         image: "https://avatars.mds.yandex.net/i?id=c31ad3a12f1911fa194c71768c82791f75b04b6c-5231753-images-thumbs&n=13"
     },
     {
-        name: "Liam Brooks",
-        role: "Art Director",
+        name: "Faisal",
+        role: "Project manager",
         image: "https://avatars.mds.yandex.net/i?id=b84d049672264b44387c4dce2d9215fbefcdfdf9-4055226-images-thumbs&n=13"
     },
     {
-        name: "Sophia Evans",
-        role: "Illustrator",
+        name: "Ali hussain",
+        role: "Full stack developer",
         image: "https://avatars.mds.yandex.net/i?id=b84d049672264b44387c4dce2d9215fbefcdfdf9-4055226-images-thumbs&n=13"
     },
     {
-        name: "Noah Bennett",
-        role: "UI/UX Designer",
+        name: "Zubair",
+        role: "Freelauncer",
         image: "https://avatars.mds.yandex.net/i?id=b84d049672264b44387c4dce2d9215fbefcdfdf9-4055226-images-thumbs&n=13"
     }
 ];

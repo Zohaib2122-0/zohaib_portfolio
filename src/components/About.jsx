@@ -68,45 +68,46 @@ export const About = () => {
                     </div>
 
                     {/* Right Side - Content */}
-                    <div className="space-y-8">
-                        {/* About Us Badge */}
-                        <div className="flex items-center gap-2">
-                            <div className="w-2 h-2 bg-lab rounded-full"></div>
-                            <span className="text-lab text-sm font-medium">About Us</span>
-                        </div>
+                   <div className="space-y-8">
+  {/* About Us Badge */}
+  <div className="flex items-center gap-2">
+    <div className="w-2 h-2 bg-lab rounded-full"></div>
+    <span className="text-lab text-sm font-medium">About Us</span>
+  </div>
 
-                        {/* Main Heading */}
-                        <h2 className="text-4xl md:text-5xl font-light leading-tight">
-                            A team of <span className="text-lab">creative</span><br />
-                            <span className="text-lab">thinkers</span>
-                        </h2>
+  {/* Main Heading */}
+  <h2 className="text-4xl md:text-5xl font-light leading-tight">
+    A team of <span className="text-lab">full-stack</span><br />
+    <span className="text-lab">web developers</span>
+  </h2>
 
-                        {/* Description */}
-                        <p className="text-gray-300 text-lg leading-relaxed max-w-md">
-                            We're a full-service design agency specializing in branding, web design, and
-                            creative strategies that elevate businesses.
-                        </p>
+  {/* Description */}
+  <p className="text-gray-300 text-lg leading-relaxed max-w-md">
+    We are a modern web development team specializing in MERN Stack and Next.js. From building high-performance
+    frontends to robust backend APIs, we deliver scalable, secure, and optimized solutions that bring your ideas to life.
+  </p>
 
-                        {/* Values List */}
-                        <div className="space-y-4 pt-4">
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                <span className="text-gray-200">Creativity and Innovation</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                <span className="text-gray-200">Client-Centricity</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                <span className="text-gray-200">Integrity and Transparency</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                <span className="text-gray-200">Excellence and Quality</span>
-                            </div>
-                        </div>
-                    </div>
+  {/* Values List */}
+  <div className="space-y-4 pt-4">
+    <div className="flex items-center gap-3">
+      <div className="w-2 h-2 bg-lab rounded-full"></div>
+      <span className="text-gray-200">MERN & Next.js Expertise</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <div className="w-2 h-2 bg-lab rounded-full"></div>
+      <span className="text-gray-200">SEO-Friendly & Scalable Solutions</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <div className="w-2 h-2 bg-lab rounded-full"></div>
+      <span className="text-gray-200">Agile & Transparent Workflow</span>
+    </div>
+    <div className="flex items-center gap-3">
+      <div className="w-2 h-2 bg-lab rounded-full"></div>
+      <span className="text-gray-200">User-Centered Design & Performance</span>
+    </div>
+  </div>
+</div>
+
                 </div>
 
                 {/* Decorative Element - Bottom Right */}
@@ -139,112 +140,108 @@ export const About = () => {
 
             <Projectcompleted />
 
-            <Proudmoments />
+            {/* <Proudmoments /> */}
 
             {/* vision and mission */}
-            <div className="px-6 md:px-12 lg:px-20 ">
-                <div className='border-2  bg-[#1F1F1F] rounded-2xl border-gray-700 space-y-4'>
-                    {/* our vission */}
+         <div className="px-6 md:px-12 lg:px-20 my-5">
+  <div className='border-2 bg-[#1F1F1F] rounded-2xl border-gray-700 space-y-4'>
 
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center  p-4 ">
-                        {/* Left Side - Device Mockups */}
-                        <img src="https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/our-vision-img.jpg" className='relative w-96 h-96 rounded-2xl' alt="" />
+    {/* Our Vision */}
+    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center p-4">
+      {/* Left Side - Image */}
+      <img src="https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/our-vision-img.jpg" className='relative w-96 h-96 rounded-2xl' alt="Our Vision" />
 
-                        {/* Right Side - Content */}
-                        <div className="space-y-8">
-                            {/* Section Badge */}
-                            <div className="flex items-center gap-2">
-                                <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                <span className="text-yellow-400 text-sm font-medium">Our Vision</span>
-                            </div>
+      {/* Right Side - Content */}
+      <div className="space-y-8">
+        {/* Section Badge */}
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 bg-lab rounded-full"></div>
+          <span className="text-yellow-400 text-sm font-medium">Our Vision</span>
+        </div>
 
-                            {/* Main Heading */}
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight">
-                                Driving the Future of<br />
-                                <span className="text-yellow-400">Creativity</span>
-                            </h2>
+        {/* Main Heading */}
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight">
+          Shaping the Future of <br />
+          <span className="text-yellow-400">Web Development</span>
+        </h2>
 
-                            {/* Description */}
-                            <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
-                                We're a full-service design agency specializing in branding, web design, and
-                                creative strategies that elevate businesses.
-                            </p>
+        {/* Description */}
+        <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
+          Our vision is to lead the evolution of full-stack development using cutting-edge technologies like MERN and Next.js. We strive to build fast, secure, and scalable web solutions that empower businesses globally.
+        </p>
 
-                            {/* Values List */}
-                            <div className="space-y-4 pt-4">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Creativity and Innovation</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Client-Centricity</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Integrity and Transparency</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Excellence and Quality</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        {/* Values List */}
+        <div className="space-y-4 pt-4">
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Modern Tech Stack (MERN & Next.js)</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Scalable Architecture</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Performance-Driven Development</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Future-Ready Applications</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                    {/* our mission */}
+    {/* Our Mission */}
+    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center p-4 bg-[#1F1F1F]">
+      
+      {/* Left Side - Content */}
+      <div className="space-y-8">
+        {/* Section Badge */}
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 bg-lab rounded-full"></div>
+          <span className="text-yellow-400 text-sm font-medium">Our Mission</span>
+        </div>
 
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center  p-4 bg-[#1F1F1F]  ">
-                        {/* Left Side - Device Mockups */}
+        {/* Main Heading */}
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight">
+          Empowering Businesses with <br />
+          <span className="text-yellow-400">Robust Web Solutions</span>
+        </h2>
 
+        {/* Description */}
+        <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
+          Our mission is to deliver tailored web applications using MERN Stack and Next.js. We aim to simplify digital transformation through reliable code, optimized performance, and seamless user experiences.
+        </p>
 
-                        <div className="space-y-8  ">
-                            {/* Section Badge */}
-                            <div className="flex items-center gap-2">
-                                <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                <span className="text-yellow-400 text-sm font-medium">Our Mission</span>
-                            </div>
+        {/* Values List */}
+        <div className="space-y-4 pt-4">
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Full-Stack Expertise</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Client-Focused Development</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Agile & Transparent Process</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="w-2 h-2 bg-lab rounded-full"></div>
+            <span className="text-gray-200">Continuous Improvement</span>
+          </div>
+        </div>
+      </div>
 
-                            {/* Main Heading */}
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight">
-                                Driving the Future of<br />
-                                <span className="text-yellow-400">Creativity</span>
-                            </h2>
+      {/* Right Side - Image */}
+      <img src="https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/our-mission-img.jpg" className='relative w-96 h-96 rounded-2xl' alt="Our Mission" />
+    </div>
 
-                            {/* Description */}
-                            <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
-                                We're a full-service design agency specializing in branding, web design, and
-                                creative strategies that elevate businesses.
-                            </p>
+  </div>
+</div>
 
-                            {/* Values List */}
-                            <div className="space-y-4 pt-4">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Creativity and Innovation</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Client-Centricity</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Integrity and Transparency</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-lab rounded-full"></div>
-                                    <span className="text-gray-200">Excellence and Quality</span>
-                                </div>
-                            </div>
-                        </div>
-                        {/* Right Side - Content */}
-                        <img src="https://demo.awaikenthemes.com/rovex/wp-content/uploads/2025/01/our-mission-img.jpg" className='relative w-96 h-96 rounded-2xl' alt="error" />
-
-                    </div>
-
-
-                </div>
-            </div>
 
             <OurTeam />
 

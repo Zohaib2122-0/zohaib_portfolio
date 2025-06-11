@@ -86,7 +86,7 @@ const Projectcompleted = () => {
     return (
         <div ref={ref}>
 
-            <div className="px-6 md:px-12 lg:px-20 bg-darkbg">
+            <div className="px-6 md:px-12 lg:px-20 bg-darkbg ">
                 <div className="bg-lab text-gray-900 rounded-3xl p-8 lg:p-12 relative overflow-hidden">
                     {/* Main Content */}
                     <div className="max-w-4xl">
@@ -99,37 +99,35 @@ const Projectcompleted = () => {
                         >
 
 
-                        <p className="text-lg lg:text-xl leading-relaxed mb-12">
-                            We specialize in delivering innovative and impactful design solutions that elevate brands and
-                            drive results. From digital experiences to print media, our team of creative professionals is
-                            dedicated to transforming ideas into compelling visual stories that resonate with audiences.
-                            With a focus on creativity, strategy, and client collaboration.
-                        </p>
+                            <p className="text-lg lg:text-xl leading-relaxed mb-12">
+                                I specialize in building scalable, high-performance web applications using the MERN stack — MongoDB, Express.js, React, and Node.js. From frontend interfaces to backend APIs, I craft full-stack solutions that are modern, responsive, and user-focused. With a strong focus on clean code, performance, and client collaboration, I turn business ideas into powerful digital products.
+                            </p>
+
                         </motion.div>
 
                         {/* Statistics */}
-                           <motion.div
+                        <motion.div
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={isInView ? { scale: 1, opacity: 1 } : {}}
                             transition={{ duration: 0.6, ease: "easeOut" }}
                         >
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                            <div className="border-l-2 border-gray-700 pl-6">
-                                <div className="text-4xl lg:text-5xl font-bold mb-2">45+</div>
-                                <div className="text-gray-700 font-medium">Project Completed</div>
-                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                                <div className="border-l-2 border-gray-700 pl-6">
+                                    <div className="text-4xl lg:text-5xl font-bold mb-2">45+</div>
+                                    <div className="text-gray-700 font-medium">Project Completed</div>
+                                </div>
 
-                            <div className="border-l-2 border-gray-700 pl-6">
-                                <div className="text-4xl lg:text-5xl font-bold mb-2">15+</div>
-                                <div className="text-gray-700 font-medium">Years Of Experience</div>
-                            </div>
+                                <div className="border-l-2 border-gray-700 pl-6">
+                                    <div className="text-4xl lg:text-5xl font-bold mb-2">15+</div>
+                                    <div className="text-gray-700 font-medium">Years Of Experience</div>
+                                </div>
 
-                            <div className="border-l-2 border-gray-700 pl-6">
-                                <div className="text-4xl lg:text-5xl font-bold mb-2">100+</div>
-                                <div className="text-gray-700 font-medium">Client Satisfaction</div>
+                                <div className="border-l-2 border-gray-700 pl-6">
+                                    <div className="text-4xl lg:text-5xl font-bold mb-2">100+</div>
+                                    <div className="text-gray-700 font-medium">Client Satisfaction</div>
+                                </div>
                             </div>
-                        </div>
                         </motion.div>
                     </div>
 

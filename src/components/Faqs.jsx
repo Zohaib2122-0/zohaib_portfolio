@@ -7,28 +7,50 @@ export const Faqs = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqs = [
-    {
-      question: 'How secure is my insurance information?',
-      answer:
-        'We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.',
-    },
-    {
-      question: 'How can I customize my insurance coverage?',
-      answer:
-        'Our insurance plans are customizable. You can tailor your coverage to meet your specific needs and budget.',
-    },
-    {
-      question: 'Is there a waiting period for insurance claims?',
-      answer:
-        'There may be a waiting period for certain insurance claims, depending on the policy terms and conditions. Please refer to your policy documents for details.',
-    },
-    {
-      question: 'Is there a waiting period for insurance claims?',
-      answer:
-        'There may be a waiting period for certain insurance claims, depending on the policy terms and conditions. Please refer to your policy documents for details.',
-    },
-  ];
+  // const faqs = [
+  //   {
+  //     question: 'How secure is my insurance information?',
+  //     answer:
+  //       'We prioritize the security of your insurance information. We use advanced encryption and strict data protection measures to ensure your data is safe and confidential.',
+  //   },
+  //   {
+  //     question: 'How can I customize my insurance coverage?',
+  //     answer:
+  //       'Our insurance plans are customizable. You can tailor your coverage to meet your specific needs and budget.',
+  //   },
+  //   {
+  //     question: 'Is there a waiting period for insurance claims?',
+  //     answer:
+  //       'There may be a waiting period for certain insurance claims, depending on the policy terms and conditions. Please refer to your policy documents for details.',
+  //   },
+  //   {
+  //     question: 'Is there a waiting period for insurance claims?',
+  //     answer:
+  //       'There may be a waiting period for certain insurance claims, depending on the policy terms and conditions. Please refer to your policy documents for details.',
+  //   },
+  // ];
+const faqs = [
+  {
+    question: 'What technologies do you use for web development?',
+    answer:
+      'I specialize in the MERN stack — MongoDB, Express.js, React.js, and Node.js — along with Tailwind CSS, Git, and cloud services like Firebase.',
+  },
+  {
+    question: 'Can you build both frontend and backend?',
+    answer:
+      'Yes, I build full-stack web applications from scratch — including frontend UI, backend APIs, databases, and authentication systems.',
+  },
+  {
+    question: 'Do you offer deployment and hosting support?',
+    answer:
+      'Absolutely. I deploy applications on platforms like Vercel, Netlify, and Render for frontend, and use services like Railway or VPS for backend hosting.',
+  },
+  {
+    question: 'How long does it take to build a complete website?',
+    answer:
+      'It depends on the complexity. A basic website takes 5–7 days, while full-stack apps may take 2–3 weeks or more depending on features and revisions.',
+  }
+];
 
   return (
     <div className="pb-4 pt-24 px-12 w-full mx-auto flex flex-col md:flex-row gap-12 bg-darkbg">

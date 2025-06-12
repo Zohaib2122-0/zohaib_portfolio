@@ -104,14 +104,14 @@ export const Navv = () => {
               messages
             </Link> */}
 
-            <Link to={"/portfolio"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
+            {/* <Link to={"/portfolio"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               Portfolio
-            </Link>
+            </Link> */}
             <Link to={"/about"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
               About
             </Link>
             <Link to={"/contact"} className="text-cont hover:text-lab block px-3 py-2 rounded-md text-base font-medium">
-              About
+              Contact
             </Link>
 
 

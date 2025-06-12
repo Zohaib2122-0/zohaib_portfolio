@@ -65,16 +65,12 @@ export const Navv = () => {
 
           {/* Login & Signup Buttons */}
           <div className="md:flex items-center ">
-
+            <Link to={"/portfolio"}>
             <button
               className="py-2 px-3 bg-lab text-black font-medium rounded-lg hover:bg-yellow-300 hidden lg:block transition ">
-              <Link to={"/portfolio"}>
              Portfolio
-              </Link>
             </button>
-
-
-
+              </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -120,17 +116,18 @@ export const Navv = () => {
             </Link> */}
             
           <div className='flex items-center '>
+            <Link to={"/portfolio"}>
               <button
 
                 className="py-2 px-3 bg-lab w-40 text-white font-medium rounded-lg hover:bg-yellow-500 transition"
               >
 
-                <Link to={"/portfolio"}>
+                
                   <div className=' text-white scale-100   w-32 text-sm'>
                     Portfolio
                   </div>
-                </Link>
               </button>
+                </Link>
             </div>
             
           </div>

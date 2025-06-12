@@ -44,18 +44,18 @@ const ProjectsPage = () => {
       category: "Business Website",
       project: ["/carshowroom.PNG"]
     },
-    {
-      _id: "6",
-      title: "Mrctour sand rentacar",
-      to: "https://aonebrokers.com/profile",
-      category: "Business Website",
-      project: ["/carshowroom.PNG"]
-    },
+    // {
+    //   _id: "6",
+    //   title: "Aone Brokes",
+    //   to: "https://aonebrokers.com/profile",
+    //   category: "Business Website",
+    //   project: ["/carshowroom.PNG"]
+    // },
     {
       _id: "7",
       title: "Aone User dashboard",
       to: "https://aonebrokers.com/profile",
-      category: "User dashboard",
+      category: "User Dashboards",
       project: ["/aoneuserpannel.PNG"]
     },
     {
@@ -69,7 +69,7 @@ const ProjectsPage = () => {
       _id: "9",
       title :"Hospital Management system",
       to: "https://faisal-hm-frontend.vercel.app/admin",
-      category: "Admin dashboard",
+      category: "Admin Dashboards",
       project: ["/hospialadminpannel.PNG"]
     },
 

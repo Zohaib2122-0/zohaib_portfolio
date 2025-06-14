@@ -17,10 +17,10 @@ const ProjectsPage = () => {
     },
     {
       _id: "2",
-      title: "Peec",
-      category: "Business Website",
-      to: "https://peec.uk/",
-      project: ["/peec.PNG"]
+      title: "E-mareez",
+      to: "https://e-mareez.com/products/hospitalmanagement",
+      category: "Management system",
+      project: ["/emarez.PNG"]
     },
     {
       _id: "3",
@@ -62,28 +62,48 @@ const ProjectsPage = () => {
       _id: "8",
       title: "Hospital Management system",
       to: "https://faisal-hm-frontend.vercel.app/",
-      category: "Hospital management system",
+      category: "Management system",
       project: ["/hospital.PNG"]
     },
     {
       _id: "9",
-      title :"Hospital Management system",
+      title: "Hospital Management system",
       to: "https://faisal-hm-frontend.vercel.app/admin",
       category: "Admin Dashboards",
       project: ["/hospialadminpannel.PNG"]
+    },
+    {
+      _id: "10",
+      title: "Peec",
+      category: "Business Website",
+      to: "https://peec.uk/",
+      project: ["/peec.PNG"]
+    },
+    {
+      _id: "11",
+      title: "Exness Global",
+      category: "Trading site",
+      to: "https://www.exnesspromo.com/en/trade-with-low-spread/?partner_id=yqaqx5kryg",
+      project: ["/exness.PNG"]
+    },
+    {
+      _id: "12",
+      title: "Push digits",
+      category: "Tax consultant",
+      to: "https://www.pushdigits.pk/",
+      project: ["/tax.PNG"]
     },
 
   ];
 
 
   const categories = [
-    "Full Stack Development",
-    "React UI Design",
-    "Authentication & Security",
+    "Trading site",
     "Admin Dashboards",
-    "Node.js Projects",
     "Business website",
-    "User Dashboards"
+    "User Dashboards",
+    "Management system",
+    "Tax consultant"
 
   ];
 
@@ -166,7 +186,7 @@ const ProjectsPage = () => {
                 key={proj._id}
                 className="relative bg-[#1f1f1f] rounded-3xl overflow-hidden shadow-lg"
               >
-                <Link key={proj._id} to={proj.to}>
+                <Link key={proj._id} to={proj.to} target='_blank'>
 
                   <div className="bg-[#1f1f1f] p-2 rounded-2xl">
                     <img

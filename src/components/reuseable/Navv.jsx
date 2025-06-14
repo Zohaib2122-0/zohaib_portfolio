@@ -56,6 +56,9 @@ export const Navv = () => {
                 <Link to={"/contact"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
                   contact
                 </Link>
+                <Link to={"/contact"} className="text-cont hover:text-lab px-3 py-2 rounded-md text-sm font-medium">
+                  contact
+                </Link>
            
               </div>
 

@@ -44,50 +44,43 @@ const ProjectsPage = () => {
       category: "Business Website",
       project: ["/carshowroom.PNG"]
     },
-    // {
-    //   _id: "6",
-    //   title: "Aone Brokes",
-    //   to: "https://aonebrokers.com/profile",
-    //   category: "Business Website",
-    //   project: ["/carshowroom.PNG"]
-    // },
     {
-      _id: "7",
+      _id: "6",
       title: "Aone User dashboard",
       to: "https://aonebrokers.com/profile",
       category: "User Dashboards",
       project: ["/aoneuserpannel.PNG"]
     },
     {
-      _id: "8",
+      _id: "7",
       title: "Hospital Management system",
       to: "https://faisal-hm-frontend.vercel.app/",
       category: "Management system",
       project: ["/hospital.PNG"]
     },
     {
-      _id: "9",
+      _id: "8",
       title: "Hospital Management system",
       to: "https://faisal-hm-frontend.vercel.app/admin",
       category: "Admin Dashboards",
       project: ["/hospialadminpannel.PNG"]
     },
     {
-      _id: "10",
+      _id: "9",
       title: "Peec",
       category: "Business Website",
       to: "https://peec.uk/",
       project: ["/peec.PNG"]
     },
     {
-      _id: "11",
+      _id: "10",
       title: "Exness Global",
       category: "Trading site",
       to: "https://www.exnesspromo.com/en/trade-with-low-spread/?partner_id=yqaqx5kryg",
       project: ["/exness.PNG"]
     },
     {
-      _id: "12",
+      _id: "11",
       title: "Push digits",
       category: "Tax consultant",
       to: "https://www.pushdigits.pk/",

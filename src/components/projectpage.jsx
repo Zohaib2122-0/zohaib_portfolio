@@ -72,13 +72,13 @@ const ProjectsPage = () => {
       to: "https://peec.uk/",
       project: ["/peec.PNG"]
     },
-    {
-      _id: "10",
-      title: "Exness Global",
-      category: "Trading site",
-      to: "https://www.exnesspromo.com/en/trade-with-low-spread/?partner_id=yqaqx5kryg",
-      project: ["/exness.PNG"]
-    },
+    // {
+    //   _id: "10",
+    //   title: "Exness Global",
+    //   category: "Trading site",
+    //   to: "https://www.exnesspromo.com/en/trade-with-low-spread/?partner_id=yqaqx5kryg",
+    //   project: ["/exness.PNG"]
+    // },
     {
       _id: "11",
       title: "Push digits",
